@@ -1,3 +1,5 @@
+FORKED FROM:  https://github.com/airamrguez/react-native-measure-text
+
 # React Native Measure Text
 
 Measure text height and/or width without laying it out.
@@ -31,7 +33,7 @@ And then:
 
 #### Android
 
-1.  Open up `android/app/src/main/java/[...]/MainActivity.java`
+1.  Open up `android/app/src/main/java/[...]/MainApplication.java`
 
 * Add `import io.github.airamrguez.RNMeasureTextPackage;` to the imports at the top of the file
 * Add `new RNMeasureTextPackage()` to the list returned by the `getPackages()` method
@@ -64,12 +66,12 @@ class Test extends Component {
     heights: [],
   }
   async componentDidMount() {
-    const heights = await MeasureText.heights({(
+    const heights = await MeasureText.heights({
       texts, /* texts to measure */
       width, /* container width */
       fontSize,
       fontFamily /* fontFamily is optional! */
-    );
+    });
     this.setState({ heights });
   }
   render() {
