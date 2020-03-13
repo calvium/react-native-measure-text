@@ -23,6 +23,6 @@
   "author": "calvium",
   "license": "BSD 2-clause License",
   "peerDependencies": {
-    "react-native": "^0.61.5"
+    "react-native": ">=0.61.5"
   }
 }
